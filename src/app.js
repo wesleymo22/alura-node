@@ -33,6 +33,13 @@ app.put('/livros/:id', (req, res) => {
     res.status(200).json(livros)
 })
 
+app.delete('/livros/:id', (req, res) => {
+    let {id} = req.params
+    let index = buscaLivro(id)
+    livros.splice(index, 1)
+    res.status(200).json(livros)
+})
+
 function buscaLivro(id){
     return livros.findIndex((livro) => livro.id == id)
 }

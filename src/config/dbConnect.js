@@ -1,7 +1,7 @@
-import mongoose from "mongoose";
+import mongoose from "mongoose"
 
-mongoose.connect("mongodb+srv://wesleymoraes:Tuco0periquito@chatbotc.uf9xcbc.mongodb.net/ChatBotC")
+mongoose.connect("mongodb+srv://alura:123@alura.dkjed.mongodb.net/alura-node");
 
-let db = mongoose.connection
+let db = mongoose.connection;
 
-export default db
+export default db;
